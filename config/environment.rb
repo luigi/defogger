@@ -27,6 +27,7 @@ Rails::Initializer.run do |config|
   config.gem "nokogiri"
   config.gem "calais"
   config.gem "sunlight"
+  config.gem "mysql"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

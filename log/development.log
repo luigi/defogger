@@ -5681,3 +5681,10 @@ Processing DefogController#index (for 127.0.0.1 at 2009-03-31 01:12:44) [GET]
 Rendering template within layouts/application
 Rendering defog/index
 Completed in 21ms (View: 20, DB: 0) | 200 OK [http://defogger.local/]
+
+
+Processing DefogController#results (for 127.0.0.1 at 2009-03-31 01:20:10) [GET]
+  Parameters: {"key"=>"ejklhj"}
+Rendering template within layouts/application
+Rendering defog/results
+Completed in 25ms (View: 24, DB: 0) | 200 OK [http://defogger.local/results/ejklhj]
