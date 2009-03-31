@@ -4,7 +4,6 @@
 - :source: http://gems.github.com
   :name: thoughtbot-factory_girl
 - :source: http://gems.github.com
-- :name: haml
   :name: chriseppstein-compass
 - :source: http://gems.github.com
   :name: chriseppstein-compass-960-plugin
@@ -12,7 +11,6 @@
 - :name: nokogiri
 - :name: calais
 - :name: sunlight
-- :name: sqlite3-ruby
 - :name: mysql
 - :version: 2.3.2
   :name: rails
