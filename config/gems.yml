@@ -1,0 +1,15 @@
+--- 
+- :source: http://gems.github.com
+  :name: thoughtbot-shoulda
+- :source: http://gems.github.com
+  :name: thoughtbot-factory_girl
+- :source: http://gems.github.com
+  :name: chriseppstein-compass
+- :source: http://gems.github.com
+  :name: chriseppstein-compass-960-plugin
+- :name: mocha
+- :name: nokogiri
+- :name: calais
+- :name: sunlight
+- :version: 2.3.2
+  :name: rails

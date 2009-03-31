@@ -1,0 +1,105 @@
+--- !ruby/object:Gem::Specification 
+name: calais
+version: !ruby/object:Gem::Version 
+  version: 0.0.6
+platform: ruby
+authors: 
+- Abhay Kumar
+autorequire: 
+bindir: bin
+cert_chain: 
+- |
+  -----BEGIN CERTIFICATE-----
+  MIIDNjCCAh6gAwIBAgIBADANBgkqhkiG9w0BAQUFADBBMQ0wCwYDVQQDDARpbmZv
+  MRswGQYKCZImiZPyLGQBGRYLb3BlbnN5bmFwc2UxEzARBgoJkiaJk/IsZAEZFgNu
+  ZXQwHhcNMDgwMjAzMDUwODQzWhcNMDkwMjAyMDUwODQzWjBBMQ0wCwYDVQQDDARp
+  bmZvMRswGQYKCZImiZPyLGQBGRYLb3BlbnN5bmFwc2UxEzARBgoJkiaJk/IsZAEZ
+  FgNuZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCmaA3Od1p42luz
+  zDJepXD3VBFEmmeCUCOjs8rkGIlhRibBvAU8GB0hhkTUykeF6JvAp68FYtIqyTqM
+  EY7bnyYTWsvX7HrX/wGRshSKZPnxn2b0AnZ9T3QQZyUut1YQ5G+kBQrI76hz9ynA
+  l0mPCiGxrh+yUNTKt7KzOAzQbtPlqGiIzj+aYvzmdEsj24Ekm/11A/ntPnz+N/Wj
+  yS5c2tbfZdU8NfwfHCZQUBE4PROYCCjoly0QChvBQzKSZPrEpJB3EedMUyBc5m5E
+  TQ0u5aItr3isQchwo410x7ixzVveVzn4mchaGCZ3ZuPwaQkuI/7KSSWWH1LCouct
+  N7LsWR7jAgMBAAGjOTA3MAkGA1UdEwQCMAAwCwYDVR0PBAQDAgSwMB0GA1UdDgQW
+  BBRsRhkAWj4iWaut121ZcaOAKXG27DANBgkqhkiG9w0BAQUFAAOCAQEAFuqEVgKC
+  U6f237SZ/hzevOwRkaErF1EcaCEVzuNj+KNdbQOK9oOo+hHyos3jUo17TiUNDi+3
+  VJhw3cOkA/PEpa0ou0Vm8VIfXdp6dh62NhTKHBVwQ/qXHnn3aVuV/zIfOmi9WQ+t
+  mr7ehGTw7URly95GOESW4NKQ95p+iquAh/NGhtHGFt+nxjJGUkkYlnGVaxmmgof3
+  sP2hOrejIrD9jAoejiRhiA+IyEoaYJvlh+D+3MngvnyDFqHiFZgngM0fvTnMTsgT
+  avOOKhLsesocjiElkLMv8mwuY+L8P4tSvDTDKXxM9Bx/YagwgzYCqPoGtFdWI/GI
+  +keKvrmaTOJ7CQ==
+  -----END CERTIFICATE-----
+
+date: 2008-12-18 00:00:00 -05:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: hoe
+  type: :development
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.8.2
+    version: 
+description: "== Features  * Accepts documents in text/plain, text/xml and text/html format. * Basic access to the Open Calais API's Enlighten action. * Output is RDF representation of input document. * Single function ability to extract names, entities and geographies from given text.  == Synopsis  This is a very basic wrapper to the Open Calais API. It uses the POST endpoint and currently supports the Enlighten action. Here's a simple call:  Calais.enlighten(:content => \"The government of the United Kingdom has given corporations like fast food chain McDonald's the right to award high school qualifications to employees who complete a company training program.\", :content_type => :text, :license_id => LICENSE_ID)  This is the easiest way to get the RDF-formated response from the OpenCalais service.  If you want to do something more fun like getting all sorts of fun information about a document, you can try this:  Calais.process_document(:content => \"The government of the United Kingdom has given corporations like fast food chain McDonald's the right to award high school qualifications to employees who complete a company training program.\", :content_type => :text, :license_id => LICENSE_ID)  This will return an object containing information extracted from the RDF response.  == Requirements  * Ruby 1.8.5 or better * Uses the following standard libraries: digest/sha1, net/http, yaml, cgi * libxml2 / libxml-ruby * curb, libcurl"
+email: info@opensynapse.net
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- History.txt
+- Manifest.txt
+- README.txt
+files: 
+- History.txt
+- MIT-LICENSE
+- Manifest.txt
+- README.txt
+- Rakefile
+- init.rb
+- lib/calais.rb
+- lib/calais/client.rb
+- lib/calais/response.rb
+- spec/calais/client_spec.rb
+- spec/calais/response_spec.rb
+- spec/calais_spec.rb
+- spec/fixtures/.gitignore
+- spec/fixtures/bicycles_australia.response.json
+- spec/fixtures/bicycles_australia.response.rdf
+- spec/fixtures/bicycles_australia.xml
+- spec/fixtures/calais.yml.sample
+- spec/fixtures/slovenia_euro.xml
+- spec/helper.rb
+- spec/spec.opts
+has_rdoc: true
+homepage: http://calais.rubyforge.org
+post_install_message: 
+rdoc_options: 
+- --main
+- README.txt
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: []
+
+rubyforge_project: calais
+rubygems_version: 1.3.1
+signing_key: 
+specification_version: 2
+summary: A Ruby interface to the Calais Web Service
+test_files: []
+

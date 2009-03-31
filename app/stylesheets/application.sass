@@ -1,0 +1,169 @@
+@import compass/utilities/general/reset.sass
+@import 960/_grid.sass
+@import 960/_text.sass
+
+//------------ MIXINS
+
+=result-entry
+  +grid(2,12)
+  :font
+    :size 12px
+  :line-height 1.2
+
+//------------ LAYOUT 
+
++global-reset
+
+body
+  :background #000
+
+#container
+  +grid-container
+
+  #header
+    +grid(12,12)
+    :background #eee url('/images/bg-header.jpg')
+    :margin-top 25px
+    #date
+      +grid(2,12)
+      +alpha
+      :text-align right
+      :line-height 1em
+      :margin-top 61px
+    #title
+      +grid(8,12)
+      h1
+        :font
+          :size 80px
+        :text-align right
+        :display inline
+        :margin-bottom 0
+      h3
+        :font
+          :size 26px
+          :style italic
+        :margin -35px auto 0
+    #witty-blurb
+      +grid(2,12)
+      +omega
+      :line-height 1em
+      :margin-top 61px
+    hr
+      :width 780px
+      :height 5px
+      :color black
+      :background-color black
+    
+  #content
+    +grid(12,12)
+    :background #eee url('/images/bg.jpg')
+    
+    #left-pad
+      +grid(1,12)
+      +alpha
+    #right-pad
+      +grid(1,12)
+      +omega
+
+    #main
+      +grid(10,12)
+      :width 780px
+      #sidebar
+        +grid(3,12)
+        +alpha
+      #form
+        +grid(7,12)
+        +omega
+        input#defog-button
+          :font-size 24px
+      #result-message
+        +grid(10,12)
+        +alpha
+        +omega
+        h4
+          :text-align center
+          :border 1px black solid
+          :padding 10px 10px 10px 10px
+      h2.result-heading
+        :text-align center
+        :border-bottom 2px black solid
+        +grid(10,12)
+        +alpha
+        +omega
+      h5.result-entry-heading
+        :margin-bottom 0px
+        :font
+          :size 14px
+      .result-entry
+        +result-entry
+      .result-entry-alpha
+        +result-entry
+        +alpha
+      .result-entry-omega
+        +result-entry
+        +omega
+      .source-entry
+        +grid(10,12)
+        +alpha
+        +omega
+
+
+      #footer
+        +grid(10,12)
+        +alpha
+        +omega
+        :text-align center
+        img
+          :vertical-align top
+          :padding-bottom 20px
+        hr
+          :width 780px
+          :height 3px
+          :color black
+          :background-color black
+        h5
+          :margin-bottom 0
+        #built-by
+          +grid(2,12)
+          +alpha
+        #built-for
+          +grid(2,12)
+        #built-on
+          +grid(2,12)
+        #powered-by
+          +grid(2,12)
+        #code-at
+          +grid(2,12)
+          +omega
+
+
+//------------ TYPOGRAPHY
+
++text
+
+
+body
+  :font
+    :color black
+    :size 14px
+    :family Georgia, Garamond, Times, serif
+  :line-height 1.5
+
+
+h1, h2, h3, h4, h5, label
+  :font
+    :weight bold
+
+label
+  :font-size 20px
+  :display block
+input
+  :font-size 18px
+  :display block
+
+input, textarea
+  :margin-bottom 20px
+
+//------------ COLOR 
+#container
+  :color #000

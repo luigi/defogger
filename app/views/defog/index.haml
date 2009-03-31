@@ -1,0 +1,19 @@
+#sidebar
+	%p
+		Defogger is a tool that helps you clear the haze surrounding the inner workings of Washington, DC and the federal government.
+	%p
+		Feed it a news article, blog post, or press release, and Defogger will present you with an enhanced view of the people, 
+		organizations, and relationships described in the piece. 
+	%p
+		Defogger helps you dig deeper, connect the dots, and bring things into focus. Try it now!
+
+#form
+	%label
+		Enter the URL:
+		%input{ :type => "text", :size => "40"}
+		
+	%label
+		Or, paste in the text:
+		%textarea{ :rows => 15, :cols => "60"}
+	
+	%input{ :type => "submit", :name => "Defog", :value => "Defog", :id => "defog-button"}

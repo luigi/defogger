@@ -1,0 +1,353 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+pre, a, abbr, acronym, address, code, del, dfn, em, img,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption, tbody, tfoot, thead, tr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+blockquote, q {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  quotes: "" ""; }
+  blockquote:before, q:before,
+  blockquote:after, q:after {
+    content: ""; }
+
+th, td, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+table {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+a img {
+  border: none; }
+
+body {
+  background: #000; }
+
+#container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px; }
+  #container #header {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 940px;
+    background: #eee url('/images/bg-header.jpg');
+    margin-top: 25px; }
+    #container #header #date {
+      display: inline;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 140px;
+      margin-left: 0;
+      text-align: right;
+      line-height: 1em;
+      margin-top: 61px; }
+    #container #header #title {
+      display: inline;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 620px; }
+      #container #header #title h1 {
+        font-size: 80px;
+        text-align: right;
+        display: inline;
+        margin-bottom: 0; }
+      #container #header #title h3 {
+        font-size: 26px;
+        font-style: italic;
+        margin: -35px auto 0; }
+    #container #header #witty-blurb {
+      display: inline;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 140px;
+      margin-right: 0;
+      line-height: 1em;
+      margin-top: 61px; }
+    #container #header hr {
+      width: 780px;
+      height: 5px;
+      color: black;
+      background-color: black; }
+  #container #content {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 940px;
+    background: #eee url('/images/bg.jpg'); }
+    #container #content #left-pad {
+      display: inline;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 60px;
+      margin-left: 0; }
+    #container #content #right-pad {
+      display: inline;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 60px;
+      margin-right: 0; }
+    #container #content #main {
+      display: inline;
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      width: 780px;
+      width: 780px; }
+      #container #content #main #sidebar {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 220px;
+        margin-left: 0; }
+      #container #content #main #form {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 540px;
+        margin-right: 0; }
+        #container #content #main #form input#defog-button {
+          font-size: 24px; }
+      #container #content #main #result-message {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 780px;
+        margin-left: 0;
+        margin-right: 0; }
+        #container #content #main #result-message h4 {
+          text-align: center;
+          border: 1px black solid;
+          padding: 10px 10px 10px 10px; }
+      #container #content #main h2.result-heading {
+        text-align: center;
+        border-bottom: 2px black solid;
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 780px;
+        margin-left: 0;
+        margin-right: 0; }
+      #container #content #main h5.result-entry-heading {
+        margin-bottom: 0px;
+        font-size: 14px; }
+      #container #content #main .result-entry {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 140px;
+        font-size: 12px;
+        line-height: 1.2; }
+      #container #content #main .result-entry-alpha {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 140px;
+        font-size: 12px;
+        line-height: 1.2;
+        margin-left: 0; }
+      #container #content #main .result-entry-omega {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 140px;
+        font-size: 12px;
+        line-height: 1.2;
+        margin-right: 0; }
+      #container #content #main .source-entry {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 780px;
+        margin-left: 0;
+        margin-right: 0; }
+      #container #content #main #footer {
+        display: inline;
+        float: left;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 780px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center; }
+        #container #content #main #footer img {
+          vertical-align: top;
+          padding-bottom: 20px; }
+        #container #content #main #footer hr {
+          width: 780px;
+          height: 3px;
+          color: black;
+          background-color: black; }
+        #container #content #main #footer h5 {
+          margin-bottom: 0; }
+        #container #content #main #footer #built-by {
+          display: inline;
+          float: left;
+          margin-left: 10px;
+          margin-right: 10px;
+          width: 140px;
+          margin-left: 0; }
+        #container #content #main #footer #built-for {
+          display: inline;
+          float: left;
+          margin-left: 10px;
+          margin-right: 10px;
+          width: 140px; }
+        #container #content #main #footer #built-on {
+          display: inline;
+          float: left;
+          margin-left: 10px;
+          margin-right: 10px;
+          width: 140px; }
+        #container #content #main #footer #powered-by {
+          display: inline;
+          float: left;
+          margin-left: 10px;
+          margin-right: 10px;
+          width: 140px; }
+        #container #content #main #footer #code-at {
+          display: inline;
+          float: left;
+          margin-left: 10px;
+          margin-right: 10px;
+          width: 140px;
+          margin-right: 0; }
+
+body {
+  font: 8.667px Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; }
+
+a:focus {
+  outline: 1px dotted invert; }
+
+hr {
+  border-color: #ccc;
+  border-style: solid;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0; }
+
+h1 {
+  font-size: 25px; }
+
+h2 {
+  font-size: 23px; }
+
+h3 {
+  font-size: 21px; }
+
+h4 {
+  font-size: 19px; }
+
+h5 {
+  font-size: 17px; }
+
+h6 {
+  font-size: 15px; }
+
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: square; }
+
+li {
+  margin-left: 30px; }
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 20px; }
+
+body {
+  font-color: black;
+  font-size: 14px;
+  font-family: Georgia, Garamond, Times, serif;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, label {
+  font-weight: bold; }
+
+label {
+  font-size: 20px;
+  display: block; }
+
+input {
+  font-size: 18px;
+  display: block; }
+
+input, textarea {
+  margin-bottom: 20px; }
+
+#container {
+  color: #000; }
