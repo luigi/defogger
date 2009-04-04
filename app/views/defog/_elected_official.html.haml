@@ -1,0 +1,7 @@
+%h5.result-entry-heading= elected_official.title + ". " + elected_official.printname
+= image_tag("http://govpix.appspot.com/#{elected_official.printname}", :size => "100x125")
+%ul
+  %li= "#{elected_official.party}-#{elected_official.state}"
+  %li= "Vital Facts: " + link_to("Project Vote Smart", "http://www.votesmart.org/bio.php?can_id=#{elected_official.votesmart_id}")
+  %li= "Fundraising Figures: " + link_to("OpenSecrets.org", "http://www.opensecrets.org/politicians/summary.php?cid=#{elected_official.crp_id}&cycle=2008")
+  %li= "Voting Record & Bill Sponsorship: " + link_to("GovTrack.us", "http://www.govtrack.us/congress/person.xpd?id=#{elected_official.govtrack_id}")

@@ -9,6 +9,7 @@
   :font
     :size 12px
   :line-height 1.2
+  :margin-bottom 30px
 
 //------------ LAYOUT 
 
@@ -80,10 +81,13 @@ body
         +grid(10,12)
         +alpha
         +omega
+        :background-color #FFF2CF
+        :margin-bottom 20px
         h4
           :text-align center
           :border 1px black solid
           :padding 10px 10px 10px 10px
+          :margin-bottom 0px
       h2.result-heading
         :text-align center
         :border-bottom 2px black solid
@@ -102,11 +106,14 @@ body
       .result-entry-omega
         +result-entry
         +omega
-      .source-entry
+      .source-iframe, .source-body
         +grid(10,12)
         +alpha
         +omega
-
+      ul
+        :list-style-type disc
+      li
+        :margin 10px 0px 5px 15px
 
       #footer
         +grid(10,12)

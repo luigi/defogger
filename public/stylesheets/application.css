@@ -168,11 +168,14 @@ body {
         margin-right: 10px;
         width: 780px;
         margin-left: 0;
-        margin-right: 0; }
+        margin-right: 0;
+        background-color: #FFF2CF;
+        margin-bottom: 20px; }
         #container #content #main #result-message h4 {
           text-align: center;
           border: 1px black solid;
-          padding: 10px 10px 10px 10px; }
+          padding: 10px 10px 10px 10px;
+          margin-bottom: 0px; }
       #container #content #main h2.result-heading {
         text-align: center;
         border-bottom: 2px black solid;
@@ -193,7 +196,8 @@ body {
         margin-right: 10px;
         width: 140px;
         font-size: 12px;
-        line-height: 1.2; }
+        line-height: 1.2;
+        margin-bottom: 150px; }
       #container #content #main .result-entry-alpha {
         display: inline;
         float: left;
@@ -202,6 +206,7 @@ body {
         width: 140px;
         font-size: 12px;
         line-height: 1.2;
+        margin-bottom: 150px;
         margin-left: 0; }
       #container #content #main .result-entry-omega {
         display: inline;
@@ -211,8 +216,9 @@ body {
         width: 140px;
         font-size: 12px;
         line-height: 1.2;
+        margin-bottom: 150px;
         margin-right: 0; }
-      #container #content #main .source-entry {
+      #container #content #main .source-iframe, #container #content #main .source-body {
         display: inline;
         float: left;
         margin-left: 10px;
@@ -220,6 +226,10 @@ body {
         width: 780px;
         margin-left: 0;
         margin-right: 0; }
+      #container #content #main ul {
+        list-style-type: disc; }
+      #container #content #main li {
+        margin: 10px 0px 5px 15px; }
       #container #content #main #footer {
         display: inline;
         float: left;

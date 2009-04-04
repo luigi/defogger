@@ -1,55 +1,84 @@
 #result-message
-	%h4 Make your own connections. View the summaries below...
-#electeds
-	%h2.result-heading Members of Congress
-	.result-entry-alpha
-		%h5.result-entry-heading Nancy Pelosi
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+  %h4 Make your own connections. View the summaries below...
 
-	.result-entry
-		%h5.result-entry-heading Harry Reid
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+- if @results[:elected_officials].size > 0
+  #electeds
+    %h2.result-heading Members of Congress
 
-	.result-entry
-		%h5.result-entry-heading Harry Reid
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+    - @results[:elected_officials].each_index do |i|
+      - elected_official = @results[:elected_officials][i]
+      - if (i == 0) || ((i % 5) == 0)
+        .result-entry-alpha
+          = render :partial => 'elected_official', :object => elected_official
+      - elsif i % 5 == 4
+        .result-entry-omega
+          = render :partial => 'elected_official', :object => elected_official
+      - else
+        .result-entry
+          = render :partial => 'elected_official', :object => elected_official
 
-	.result-entry
-		%h5.result-entry-heading Harry Reid
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 
-	.result-entry-omega
-		%h5.result-entry-heading Jim Webb
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco adipisicing elit, sed do eiusmod tempor ncididunt ut labor.
+- if @results[:lobbyists].size > 0
+  #lobbyists
+    %h2.result-heading Lobbyists
 
-	.result-entry-alpha
-		%h5.result-entry-heading Nancy Pelosi
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+    - @results[:lobbyists].each_index do |i|
+      - lobbyist = @results[:lobbyists][i]
+      - if (i == 0) || ((i % 5) == 0)
+        .result-entry-alpha
+          = render :partial => 'lobbyist', :object => lobbyist
+      - elsif i % 5 == 4
+        .result-entry-omega
+          = render :partial => 'lobbyist', :object => lobbyist
+      - else
+        .result-entry
+          = render :partial => 'lobbyist', :object => lobbyist
 
-	.result-entry
-		%h5.result-entry-heading Harry Reid
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
 
-	.result-entry
-		%h5.result-entry-heading Harry Reid
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+- if @results[:companies].size > 0
+  #companies
+    %h2.result-heading Companies
 
-	.result-entry
-		%h5.result-entry-heading Harry Reid
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+    - @results[:companies].each_index do |i|
+      - company = @results[:companies][i]
+      - if (i == 0) || ((i % 5) == 0)
+        .result-entry-alpha
+          = render :partial => 'company', :object => company
+      - elsif i % 5 == 4
+        .result-entry-omega
+          = render :partial => 'company', :object => company
+      - else
+        .result-entry
+          = render :partial => 'company', :object => company
 
-	.result-entry-omega
-		%h5.result-entry-heading Jim Webb
-		%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco adipisicing elit, sed do eiusmod tempor ncididunt ut labor.
 
-#lobbyists
-	%h2.result-heading Lobbyists
-	
-#companies
-	%h2.result-heading Companies
-	
-#organizations
-	%h2.result-heading Organizations
-	
+- if @results[:organizations].size > 0
+  #organizations
+    %h2.result-heading Organizations
+  
+    - @results[:organizations].each_index do |i|
+      - organization = @results[:organizations][i]
+      - if (i == 0) || ((i % 5) == 0)
+        .result-entry-alpha
+          = render :partial => 'organization', :object => organization
+      - elsif i % 5 == 4
+        .result-entry-omega
+          = render :partial => 'organization', :object => organization
+      - else
+        .result-entry
+          = render :partial => 'organization', :object => organization  
+
+#result-message
+  %h4 For reference, here's the original text...
+  
 #text
-	%h2.result-heading Source	
+  %h2.result-heading Source 
+  
+  - if @result.source_url.blank?
+    .source-body
+      = @result.source_body.gsub!(/\n/, '<br />')
+  - else
+    .source-iframe
+      %iframe{:src => @result.source_url, :width => 780, :height => 600}
+        = link_to("Click here to view the original article", @result.source_url)
+  

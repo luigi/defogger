@@ -1,0 +1,3 @@
+%h5.result-entry-heading= lobbyist.firstname + " " + lobbyist.lastname
+%ul
+  %li= "Contribution History: " + link_to("OpenSecrets.org", "http://www.opensecrets.org/indivs/donor_lookup.php?name=#{lobbyist.lastname}, #{lobbyist.firstname}")

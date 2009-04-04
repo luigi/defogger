@@ -1,0 +1,5 @@
+%h5.result-entry-heading= company
+%ul
+  %li= "Contribution History: " + link_to("OpenSecrets.org", "http://www.opensecrets.org/usearch/searchresults.php?searchTerm=#{company}&type=O")
+  %li= "Background Info: " + link_to("Wikipedia", "http://en.wikipedia.org/wiki/#{company}")
+  %li= "In The News: " + link_to("Google News", "http://news.google.com/news?q=#{company}")
