@@ -1,54 +1,61 @@
 %html
 
-	%head
-		= stylesheet_link_tag 'application', :media => 'screen, projection'
-	
-		%title Defogger
+  %head
+    = stylesheet_link_tag 'application', :media => 'screen, projection'
+  
+    %title Defogger
 
-	%body
-	
-		#container
+  %body
+  
+    #container
 
-			#header
-				#date
-					%p= Date.today.to_s(:day_and_date) + "<br />Beta Edition"
-				#title
-					%img{ :src => "/images/logo.jpg" }
-					%h1 DEFOGGER
-					%h3 Because you shouldn't take their word for it.
-				#witty-blurb
-					%p= "An open source <br />civic project."
-				%hr
-			
-				
-			#content
-				#left-pad
-					&nbsp;
-				#main
-					= yield
-					#footer
-						%hr
-						#built-by
-							%h5 Built By
-							%a{ :href => "http://luigimontanez.com", :title => "Luigi Montanez" }
-								%img{ :src => "/images/profile.jpg", :alt => "Luigi Montanez" }
-						#built-for
-							%h5 Built For
-							%a{ :href => "http://sunlightlabs.com/appsforamerica", :title => "Apps for America" }
-								%img{ :src => "/images/apps-sunlight.png", :alt => "Apps for America" }
-						#built-on
-							%h5 Built On
-							%a{ :href => "http://rubyonrails.org", :title => "Ruby on Rails" }
-								%img{ :src => "/images/rails.png", :alt => "Ruby on Rails"  }
-						#powered-by
-							%h5 Powered By
-							%a{ :href => "http://opencalais.com", :title => "Open Calais" }
-								%img{ :src => "/images/calais-logo.jpg", :alt => "Open Calais"  }
-						#code-at
-							%h5 Code At
-							%a{ :href => "http://github.com/luigi/defogger", :title => "GitHub" }
-								%img{ :src => "/images/github.png", :alt => "GitHub" }
-				#right-pad
-					&nbsp;
-				
+      #header
+        #date
+          %p= Date.today.to_s(:day_and_date) + "<br />Beta Edition"
+        #title
+          %img{ :src => "/images/logo.jpg" }
+          %h1 DEFOGGER
+          %h3 Because you shouldn't take their word for it.
+        #witty-blurb
+          %p= "An open source <br />civic project."
+        %hr
+      
+        
+      #content
+        #left-pad
+          &nbsp;
+        #main
+          = yield
+          #footer
+            %hr
+            #built-by
+              %h5 Built By
+              %a{ :href => "http://luigimontanez.com", :title => "Luigi Montanez" }
+                %img{ :src => "/images/profile.jpg", :alt => "Luigi Montanez" }
+            #built-for
+              %h5 Built For
+              %a{ :href => "http://sunlightlabs.com/appsforamerica", :title => "Apps for America" }
+                %img{ :src => "/images/apps-sunlight.png", :alt => "Apps for America" }
+            #built-on
+              %h5 Built On
+              %a{ :href => "http://rubyonrails.org", :title => "Ruby on Rails" }
+                %img{ :src => "/images/rails.png", :alt => "Ruby on Rails"  }
+            #powered-by
+              %h5 Powered By
+              %a{ :href => "http://opencalais.com", :title => "Open Calais" }
+                %img{ :src => "/images/calais-logo.jpg", :alt => "Open Calais"  }
+            #code-at
+              %h5 Code At
+              %a{ :href => "http://github.com/luigi/defogger", :title => "GitHub" }
+                %img{ :src => "/images/github.png", :alt => "GitHub" }
+        #right-pad
 
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-4109304-11");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>
