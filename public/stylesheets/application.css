@@ -197,7 +197,7 @@ body {
         width: 140px;
         font-size: 12px;
         line-height: 1.2;
-        margin-bottom: 150px; }
+        margin-bottom: 30px; }
       #container #content #main .result-entry-alpha {
         display: inline;
         float: left;
@@ -206,7 +206,7 @@ body {
         width: 140px;
         font-size: 12px;
         line-height: 1.2;
-        margin-bottom: 150px;
+        margin-bottom: 30px;
         margin-left: 0; }
       #container #content #main .result-entry-omega {
         display: inline;
@@ -216,7 +216,7 @@ body {
         width: 140px;
         font-size: 12px;
         line-height: 1.2;
-        margin-bottom: 150px;
+        margin-bottom: 30px;
         margin-right: 0; }
       #container #content #main .source-iframe, #container #content #main .source-body {
         display: inline;

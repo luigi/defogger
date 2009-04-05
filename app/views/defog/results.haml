@@ -73,12 +73,11 @@
   
 #text
   %h2.result-heading Source 
-  
-  - if @result.source_url.blank?
-    .source-body
+  .source-body
+    - if @result.source_url.blank?
       = @result.source_body.gsub!(/\n/, '<br />')
-  - else
-    .source-iframe
-      %iframe{:src => @result.source_url, :width => 780, :height => 600}
-        = link_to("Click here to view the original article", @result.source_url)
+    - else
+      %p= link_to("Click here to view the original article...", @result.source_url)
+      = @result.source_body
+        
   
